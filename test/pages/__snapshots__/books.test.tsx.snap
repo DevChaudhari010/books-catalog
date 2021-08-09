@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Books page matches snapshot for books 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h2>
+      To know more about book click on Book
+    </h2>
+    <div
+      class="grid"
+    >
+      <a
+        class="card"
+        href="/books/1"
+      >
+        <h2>
+          Test 1
+        </h2>
+      </a>
+      <a
+        class="card"
+        href="/books/2"
+      >
+        <h2>
+          Test 2
+        </h2>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Books page matches snapshot for error 1`] = `
+<DocumentFragment>
+  <div>
+    Failed to load books. Please try again after sometime
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,50 @@
+{
+  "name": "books-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "test": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "axios": "~0.21.1",
+    "mongoose": "~5.13.5",
+    "next": "~11.0.1",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "~8.1.0",
+    "@testing-library/jest-dom": "~5.14.1",
+    "@testing-library/react": "~12.0.0",
+    "@types/jest": "^26.0.24",
+    "@types/react": "~17.0.16",
+    "babel-jest": "^27.0.6",
+    "eslint": "~7.32.0",
+    "eslint-config-next": "~11.0.1",
+    "husky": "~7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "~27.0.6",
+    "jest-watch-typeahead": "~0.6.4",
+    "lint-staged": "~11.1.2",
+    "prettier": "~2.3.2",
+    "typescript": "~4.3.5"
+  }
+}
